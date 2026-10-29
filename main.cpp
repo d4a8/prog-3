@@ -1,7 +1,7 @@
 #include <iostream>
 #include <bits/stdc++.h>
 #include <chrono>
-#define N 1e9
+#define N 1e3
 
 using namespace std;
 using namespace chrono;
@@ -46,7 +46,7 @@ int main()
         for (int i = 0; i < N; i++) x[i] = rand();
 
         auto start = high_resolution_clock::now();
-         shell_sort(x);
+        shell_sort(x);
         auto end = high_resolution_clock::now();
         auto duration = duration_cast < microseconds > (end - start);
 
