@@ -47,7 +47,7 @@ int main()
     InsertQueen(board, 0, n, solutions);
 
     auto end = chrono::high_resolution_clock::now();
-    chrono::duration<double> duration = end - start;
+    chrono::duration<double, micro> duration = end - start;
 
     cout << "Number of solutions: " << solutions << '\n';
     cout << "Execution time: " << duration.count() << " microseconds";
